@@ -1,3 +1,7 @@
+import add_contact_file
+
+
+contact_book=[]
 
 print('Welcome to the contact management system')
 
@@ -14,7 +18,7 @@ while True:
     choice=int(input('Enter your choice: '))
 
     if choice==1:
-        print('You want to add contact')
+        contact_book=add_contact_file.add_contact(contact_book)
     elif choice==2:
         print('You want to view all contact')
     elif choice==3:
