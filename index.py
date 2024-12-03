@@ -7,7 +7,7 @@ print('Welcome to the contact management system')
 
 menu_text='''
 1.Add Contact
-2.View all Contatc
+2.View all Contact
 3.Remove Contact
 4.Search Contact
 0.Exit
