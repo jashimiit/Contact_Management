@@ -1,5 +1,6 @@
 import add_contact_file
 import view_contact_file
+import search_contact_file
 
 
 contact_book=[]
@@ -25,7 +26,7 @@ while True:
     elif choice==3:
         print('You want to remove contact')
     elif choice==4:
-        print('You want to search contact')
+        search_result=search_contact_file.search_contact_by_name(contact_book)
     elif choice==0:
         print('Thank You for Using Contact Management System!')
         break
