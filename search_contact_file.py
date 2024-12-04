@@ -3,7 +3,8 @@ def search_contact_by_name(contact_book):
     search_result=[]
 
     for contact in contact_book:
-        if any(search_term.lower() in name.lower() for name in contact["name"]):
+        #if any(search_term.lower() in name.lower() for name in contact["name"]):
+        if search_term.lower() in contact["name"].lower():
             search_result.append(contact)
 
     if search_result:
