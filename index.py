@@ -1,6 +1,7 @@
 import add_contact_file
 import view_contact_file
 import search_contact_file
+import remove_contact_file
 
 
 contact_book=[]
@@ -24,7 +25,7 @@ while True:
     elif choice==2:
         view_contact_file.view_all_contact(contact_book)
     elif choice==3:
-        print('You want to remove contact')
+        contact_book=remove_contact_file.remove_contact(contact_book)
     elif choice==4:
         search_result=search_contact_file.search_contact_by_name(contact_book)
     elif choice==0:

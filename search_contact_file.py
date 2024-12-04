@@ -8,7 +8,7 @@ def search_contact_by_name(contact_book):
             search_result.append(contact)
 
     if search_result:
-        for contact in search_result:
-            print(f'Name:{contact["name"]}, email:{contact["email"]}, Phone Number:{contact["phone"]}, Address:{contact["address"]}')
+        for index, contact in enumerate(search_result):
+            print(f'{index+1}. Name:{contact["name"]}, email:{contact["email"]}, Phone Number:{contact["phone"]}, Address:{contact["address"]}')
     else:
         print('Search text not matching with any contact name!')        
