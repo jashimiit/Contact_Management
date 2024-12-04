@@ -1,4 +1,5 @@
 import add_contact_file
+import view_contact_file
 
 
 contact_book=[]
@@ -20,7 +21,7 @@ while True:
     if choice==1:
         contact_book=add_contact_file.add_contact(contact_book)
     elif choice==2:
-        print('You want to view all contact')
+        view_contact_file.view_all_contact(contact_book)
     elif choice==3:
         print('You want to remove contact')
     elif choice==4:
