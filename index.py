@@ -2,11 +2,15 @@ import add_contact_file
 import view_contact_file
 import search_contact_file
 import remove_contact_file
+import load_contact_file
 
 
 contact_book=[]
-
 print('Welcome to the contact management system')
+
+load_contact_file.load_contact(contact_book)
+
+
 
 menu_text='''
 1.Add Contact
@@ -33,3 +37,4 @@ while True:
         break
     else:
         print('You entered invalid input, Please enter correct input')
+
